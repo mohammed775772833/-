@@ -1,4 +1,4 @@
-html
+الصفحة الرسمية لملوك التنجيد 
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -42,9 +42,16 @@ html
             color: white;
             font-size: 24px;
             padding: 10px;
-            white-space: nowrap;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+        .marquee div {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
         .social-icons {
             margin-top: 20px;
@@ -64,7 +71,7 @@ html
 </header>
 
 <div class="marquee">
-    ملوك التنجيد ترحب بكم
+    <div>ملوك التنجيد ترحب بكم</div>
 </div>
 
 <nav>
