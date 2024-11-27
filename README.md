@@ -5,6 +5,7 @@ html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ملوك التنجيد لخدمات التنجيد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +29,10 @@ html
             text-decoration: none;
             color: #35424a;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff5722;
         }
         section {
             background: white;
@@ -57,6 +62,22 @@ html
         @keyframes marquee {
             from { transform: translateX(100%); }
             to { transform: translateX(-100%); }
+        }
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .icon {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        .icon i {
+            font-size: 40px;
+            color: #ff5722;
         }
     </style>
 </head>
@@ -96,6 +117,24 @@ html
 <section>
     <h2>من نحن</h2>
     <p>في ملوك التنجيد، نُقدّم لكم أكثر من مجرد خدمة تنجيد. نُقدّم لكم تجربةً فريدةً تجمع بين الحرفية العالية والتصميم الراقي، لنُضفي على أثاثكم لمسةً من الفخامة والتميّز.</p>
+</section>
+
+<section>
+    <h2>خدماتنا</h2>
+    <div class="icon-container">
+        <div class="icon">
+            <i class="fas fa-couch"></i>
+            <p>تنجيد الأثاث</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-car"></i>
+            <p>تنجيد السيارات</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+            <p>تصميم مخصص</p>
+        </div>
+    </div>
 </section>
 
 <footer>
