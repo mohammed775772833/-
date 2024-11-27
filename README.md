@@ -14,7 +14,7 @@ html
             background-color: #f4f4f4;
         }
         header {
-            background-color: #2a2a2a;
+            background-color: #343a40;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -23,16 +23,17 @@ html
             background-color: #ff5722;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: bold;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700; /* لون مختلف عند التمرير */
         }
         .marquee {
             background: #ff5722;
@@ -73,6 +74,10 @@ html
             transition: transform 0.3s;
             flex-basis: 30%;
             margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .icon:hover {
             transform: scale(1.1);
