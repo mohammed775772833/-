@@ -1,4 +1,5 @@
-الصفحة الرسمية لملوك التنجيد 
+html
+<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -14,22 +15,26 @@
         header {
             background: #35424a;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
+            display: flex;
+            justify-content: center;
             margin: 20px 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #35424a;
+            font-weight: bold;
         }
         section {
             background: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
@@ -53,15 +58,6 @@
             from { transform: translateX(100%); }
             to { transform: translateX(-100%); }
         }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 20px;
-            color: #ff5722;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
@@ -76,26 +72,33 @@
 
 <nav>
     <a href="#">الرئيسية</a>
-    <a href="#">عن الشركة</a>
-    <a href="#">اتصل بنا</a>
+    <a href="#">من نحن</a>
+    <a href="#">خدماتنا</a>
+    <a href="#">الرؤية</a>
+    <a href="#">تواصل معنا</a>
 </nav>
 
 <section>
-    <h2>خدماتنا</h2>
-    <p>نقدم خدمات تنجيد مقاعد السيارات بأعلى جودة وبأسعار تنافسية. نحن هنا لتلبية احتياجاتك وتحسين تجربة قيادتك.</p>
-    <img src="https://via.placeholder.com/400x200.png?text=صورة+كراسي+سيارة" alt="كراسي سيارة" style="width: 100%; max-width: 400px; border-radius: 5px;">
-    
-    <h3>معلومات التواصل</h3>
-    <p>فيسبوك وانستجرام: <strong>@carym.ye</strong></p>
-    <p>رقم الاتصال: <strong>775772833</strong></p>
-    <p>العنوان: <strong>الإدارة العامة، صنعاء</strong></p>
+    <h2>الرؤية</h2>
+    <p>أن نكون الرائدين في مجال خدمات التنجيد الاحترافي في اليمن، من خلال تقديم أعلى مستويات الجودة والابتكار في تصميم وتنفيذ خدمات التنجيد، مما يسهم في تلبية احتياجات عملائنا، حيث تسعى دائماً لتقديم الأفضل وتوسيع نطاق خدماتها لتلبية احتياجات السوق.</p>
+</section>
+
+<section>
+    <h2>الرسالة</h2>
+    <p>نحن في "ملوك التنجيد" نلتزم بتقديم خدمات تنجيد كراسي السيارات بأعلى معايير الجودة والاحترافية. نسعى لتحقيق رضا العملاء من خلال استخدام أفضل المواد والتقنيات الحديثة، مع التركيز على الابتكار والاهتمام بالتفاصيل. هدفنا هو تحويل كل سيارة إلى تجربة فريدة تعكس ذوق العميل واحتياجاته.</p>
+</section>
+
+<section>
+    <h2>الشحن</h2>
+    <p>الشحن متاح إلى أنحاء الجمهورية اليمنية.</p>
+</section>
+
+<section>
+    <h2>من نحن</h2>
+    <p>في ملوك التنجيد، نُقدّم لكم أكثر من مجرد خدمة تنجيد. نُقدّم لكم تجربةً فريدةً تجمع بين الحرفية العالية والتصميم الراقي، لنُضفي على أثاثكم لمسةً من الفخامة والتميّز.</p>
 </section>
 
 <footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/carym.ye">فيسبوك</a>
-        <a href="https://www.instagram.com/carym.ye">انستجرام</a>
-    </div>
     <p>جميع الحقوق محفوظة &copy; 2023 ملوك التنجيد</p>
 </footer>
 
